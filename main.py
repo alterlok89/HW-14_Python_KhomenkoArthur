@@ -14,7 +14,7 @@ class Book():
         return self.__name
 
     def set_name(self, name: str):
-        self.__name = name.capitalize()
+        self.__name = name.title()
 
     def get_year(self):
         return self.__year
@@ -29,13 +29,13 @@ class Book():
         return self.__publisher
 
     def set_publisher(self, publisher: str):
-        self.__publisher = publisher.capitalize()
+        self.__publisher = publisher.title()
 
     def get_author(self):
         return self.__author
 
     def set_author(self, author: str):
-        self.__author = author.capitalize()
+        self.__author = author.title()
 
     def __str__(self):
         return (f'Название: {self.__name}\n'
